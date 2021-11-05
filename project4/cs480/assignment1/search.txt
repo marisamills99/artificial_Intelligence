@@ -1,0 +1,33 @@
+    def search(self):
+        """returns (next) path from the problem's start node
+        to a goal node. 
+        Returns None if no path exists.
+        """
+        self.explored={}
+        while not self.empty_frontier():
+            path = self.frontier.pop(0)
+            self.display(2, "Expanding:",path,"(cost:",path.cost,")")
+            self.num_expanded += 1
+            #print(self.problem.maze.state)
+            if self.problem.is_goal(path.end()):    # solution found
+                if not self.quiet:
+                       self.display(1, self.num_expanded, "paths have been expanded and",
+                                        len(self.frontier), "paths remain in the frontier")
+                self.solution = path   # store the solution found
+                return path, self.explored_nodes
+            else:
+                neighs = self.problem.neighbors(path.end())
+                self.display(3,"Neighbors are", neighs)
+                #print(neighs)
+                # you should not use arcs, but nodes only
+                for arc in reversed(list(neighs)):
+                    print("path is \n\n", path)
+					food_list=arc[0][1]
+                    if arc[0][0] not in self.explored:
+                        self.explored[arc[0][0]]= " "
+                        self.add_to_frontier(Path(path,arc))
+                    #self.explored_nodes.append(arc[1])
+                self.display(3,"Frontier:",self.frontier)
+        return path, self.explored_nodes
+        self.display(1,"No (more) solutions. Total of",
+                     self.num_expanded,"paths expanded.")

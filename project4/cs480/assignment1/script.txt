@@ -1,0 +1,23 @@
+In [1]: cd Downloads/aipython/aipython/
+C:\Users\Marisa\Downloads\aipython\aipython
+
+In [2]: %edit pythonDemo.py
+Editing... done. Executing edited code...
+[66, 66, 66, 66, 66]
+[10, 11, 12, 13, 14]
+[14, 14, 14, 14, 14]
+[10, 11, 12, 13, 14]
+myrange(2,30,3): [2, 5, 8, 11, 14, 17, 20, 23, 26, 29]
+
+In [3]: %edit agents.py
+Editing... done. Executing edited code...
+
+In [4]: %edit agents.py
+Editing... done. Executing edited code...
+
+In [5]: %edit agents.py
+Editing... done. Executing edited code...
+
+In [6]: %edit agents.py
+Editing... done. Executing edited code...
+

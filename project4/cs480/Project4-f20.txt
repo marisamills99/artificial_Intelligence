@@ -1,0 +1,35 @@
+
+				    Project #4 (60p + 10p bonus)  
+
+In this homework you will work on two tasks using the classification and linear regression code found in Scikit.learn. 
+The links for the methods are given in the readme.txt file. 
+
+1. a) Classification: 10pts for each model
+In the first task you will use DecisionTree, RandomForest, LogisticRegression and SVM methods to classify leafs. The problem description and the data can be found in the leaf folder. The data are divided into three files: train_data.csv should be used to train the models, validation_data.csv should be used to validate the model and tune the hyper parameters, and the test_data.csv should be used to test your models.
+The data files have several columns, the first column being the target you want to predict, the other columns are the input features. The names of the features are given in the first row of the files. Note that not all features described in the attached ReadMe.pdf files are available. The files were cleaned to make your task easier. 
+
+You need to write a report that specifies what are the hyper parameters for each method. For each method you should provide a table that specifies combination of hyper parameters you tried (at least 3 values per hyper parameter) and you should provide obtained validation accuracy for each combination. You should provide the final test result for chosen parameters.
+
+For each method you need to provide a single Python file implementing the training, validation, and testing. 
+In the comments of your file you should add accuracy obtained by your method. Make sure that your file can be run and that it prints the accuracy results. 
+
+1. b) (5 pts bonus) For the method for which you obtained the highest accuracy you should provide the output two-column file formatted as follows:
+	The first column should be the ground truth label from the test_data.csv, 
+	the second column should be your predicted label. 
+
+2. a) (20 pts) Linear Regression: SGD Regression and Ridge Regression
+In this task you will predict miles/gallon from the data in the file. You can use Ordinary Least Squares as a reference, but you need to use both SGD and Ridge Regressions as well. Please note that there is a regularization parameter that you need to set. The data is divided into three files in the same manner as in part 1. 
+You need to write a report that specifies what are the hyper parameters for the method. You should provide a table that specifies combination of hyper parameters you tried (at least 3 values per hyper parameter per method) and you should provide obtained validation accuracy for each combination. You should provide the final test result for chosen parameters.
+You should provide a python file with the code used for training, validation and testing that we can run to verify your results. 
+
+You need to provide a single Python file implementing the training, validation, and testing. 
+In the comments of your file you should add RMSE obtained by your method. Make sure that your file can be run and that it prints the RMSE results. 
+
+
+2. b) (5 ptr bonus) You should provide the output two-column file formatted as follows:
+	The first column should be the predicted label from the test_data.csv, 
+	the second column should be your predicted label. 
+
+3. (10 pts potential extra credit) In each category (classification and regression) we will pick top ten performers and award 5pts bonus to each one.
+
+Late days: You have a total of 12 late days which you can use as you see fit. After you use your 12 late days any assignment submitted after it will get 0 credit.
